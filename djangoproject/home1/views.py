@@ -3,7 +3,8 @@ from django.http import HttpResponse
 from subprocess import check_output
 
 def index(request):
-    return HttpResponse("This is the home page.")
+    return render(request, 'home1/home1.html')
+    #return HttpResponse("This is the home page.")
 
 def list(request):
     return HttpResponse("this is a list")
